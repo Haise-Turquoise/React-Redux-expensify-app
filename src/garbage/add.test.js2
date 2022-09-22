@@ -1,0 +1,23 @@
+const add = (a, b) => a + b ;
+const generateGreeting = (name = 'Anonymous') => `Hello ${name}!`;
+
+test('should add two numbers', () => {
+    const result = add(3, 4);
+    expect(result).toBe(7);
+    // if (result !== 7) {
+    //     throw new Error(`ERROR: You added 4 and 3. The result was ${result}. Expected 7.`);
+    // }
+});
+
+test('greet nobody', () => {
+    expect(generateGreeting()).toBe(`Hello Anonymous!`);
+    // if (result !== 7) {
+    //     throw new Error(`ERROR: You added 4 and 3. The result was ${result}. Expected 7.`);
+    // }
+});
+test('greet Jim', () => {
+    expect(generateGreeting(`Jim`)).toBe(`Hello Jim!`);
+    // if (result !== 7) {
+    //     throw new Error(`ERROR: You added 4 and 3. The result was ${result}. Expected 7.`);
+    // }
+});

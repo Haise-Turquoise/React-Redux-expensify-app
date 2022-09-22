@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NotFound Page with expenses 1`] = `
+<div>
+  404: 你来到了没有知识的荒原 - 
+  <Link
+    replace={false}
+    to="/"
+  >
+    回到首页
+  </Link>
+</div>
+`;
